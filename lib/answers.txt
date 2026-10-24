@@ -1,0 +1,33 @@
+build() called: 0 glasses
+build() called: 1 glasses
+build() called: 2 glasses
+build() called: 3 glasses
+build() called: 4 glasses
+build() called: 5 glasses
+build() called: 6 glasses
+
+
+
+Activity2:
+When I moved `_glasses++` outside `setState()` and tapped the + button, 
+the number of glasses did not update immediately on the screen. 
+The variable still increased, but Flutter was not notified to rebuild the UI. 
+Mao nang wala makita ang updated number. After the experiment, I put `_glasses++` 
+back inside `setState()` so the counter could update correctly whenever I tapped the button.
+
+Activity 3: Removing Expanded from a StatBox:
+When I removed Expanded from one StatBox, 
+I noticed that the boxes no longer shared the available width equally. 
+The box without Expanded could have a different width compared to the others, 
+making the layout less balanced. Mao ni akong na-learn nga useful ang Expanded para
+equal ang spacing and mas organized ang weather dashboard, especially when using a Row.
+
+Activity 5: Testing the Dark Mode and Save Button:
+When I turned on the dark-mode switch, the app changed from light mode to dark mode. 
+The background, text, and other UI elements adjusted based on the selected theme. 
+When I turned the switch off, the app returned to light mode. 
+I also tapped the Save button, and a SnackBar appeared to show feedback that the settings were saved. 
+Through this activity, I learned that ThemeData controls the overall appearance of the app, while setState() updates the dark-mode value. 
+Nindot siya kay makita dayon ang changes without restarting the app.
+
+
